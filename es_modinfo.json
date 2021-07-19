@@ -6,7 +6,7 @@
     "authors": [ "Axema Vales" ],
     "description": "Adds a bunch of extra spells.",
     "category": "magical",
-    "version": "<color_light_green>V1 - 07/18/2021</color>",
+    "version": "<color_light_green>V1 - 07/19/2021</color>",
     "dependencies": [ "dda", "magiclysm" ]
   }
 ]

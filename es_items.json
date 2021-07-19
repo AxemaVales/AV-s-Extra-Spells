@@ -1,0 +1,31 @@
+[
+  {
+    "id": "es_magicweapon_crystal_aura",
+    "type": "ARMOR",
+    "name": "crystal weapon aura",
+    "description": "Your attacks gain increased damage and given a chance to petrify the weak.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price": 777,
+    "symbol": "o",
+    "color": "cyan",
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "condition": "ALWAYS",
+          "values": [ { "value": "BONUS_DAMAGE", "add": 8 } ],
+          "hit_you_effect": [
+            {
+              "id": "es_magicweapon_crystal_pet",
+              "hit_self": false,
+              "once_in": 5,
+              "message": "<color_light_green>Your weapon shimmers as it hits %2$s!</color>",
+              "npc_message": "<color_light_green>%1$s's weapon shimmers as it hits %2$s!</color>"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

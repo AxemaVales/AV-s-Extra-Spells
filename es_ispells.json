@@ -1,0 +1,17 @@
+[
+  {
+    "id": "es_magicweapon_crystal_pet",
+    "type": "SPELL",
+    "name": "Petrify",
+    "description": "Target becomes petrified, if it's weakened.",
+    "valid_targets": [ "hostile", "ally" ],
+    "flags": [ "NO_LEGS", "LOUD", "SOMATIC" ],
+    "effect": "targeted_polymorph",
+    "effect_str": "mon_petrifiedcorpse",
+    "shape": "blast",
+    "min_damage": 50,
+    "max_damage": 50,
+    "min_range": 2,
+    "max_range": 2
+  }
+]

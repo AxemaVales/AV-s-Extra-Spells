@@ -1,0 +1,42 @@
+[
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_es_eventhorizon1",
+    "name": { "str": "Scroll of Event Horizon", "str_pl": "Scrolls of Event Horizon" },
+    "description": "Written in the ancient tomes of consumption and desecration, this spell teaches you the intricacies of creating an ever-consuming black hole. Written in the front of the scroll is an ancient tongue that appears to be penned by \"ChaosVor\"",
+    "use_action": { "type": "learn_spell", "spells": [ "es_eventhorizon1" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_es_soularrow",
+    "name": { "str": "Scroll of Soul Arrow", "str_pl": "Scrolls of Soul Arrow" },
+    "description": "Projects a soul arrow towards the target.",
+    "use_action": { "type": "learn_spell", "spells": [ "es_soularrow" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_es_soularrow_great",
+    "name": { "str": "Scroll of Great Soul Arrow", "str_pl": "Scrolls of Great Soul Arrow" },
+    "description": "Projects a great soul arrow towards the target.",
+    "use_action": { "type": "learn_spell", "spells": [ "es_soularrow_great" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_es_soularrow_heavy",
+    "name": { "str": "Scroll of Heavy Soul Arrow", "str_pl": "Scrolls of Heavy Soul Arrow" },
+    "description": "Blasts a heavy soul arrow towards the target.",
+    "use_action": { "type": "learn_spell", "spells": [ "es_soularrow_heavy" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_es_magicweapon_crystal",
+    "name": { "str": "Scroll of Crystal Weapon", "str_pl": "Scrolls of Crystal Weapon" },
+    "description": "Infuses your weapon with crystallized mana, increasing its base damage and a chance to petrify weakened targets.",
+    "use_action": { "type": "learn_spell", "spells": [ "es_magicweapon_crystal" ] }
+  }
+]

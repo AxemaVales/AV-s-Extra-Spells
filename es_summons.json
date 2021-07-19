@@ -1,0 +1,112 @@
+[
+  {
+    "type": "effect_type",
+    "id": "eff_eventhorizon_limit",
+    "base_mods": { "hurt_min": [ 4 ], "hurt_max": [ 8 ] }
+  },
+  {
+    "id": "fd_eventhorizon_limit",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "...",
+        "color": "black",
+        "effects": [
+          {
+            "effect_id": "eff_eventhorizon_limit",
+            "body_part": "torso",
+            "min_duration": "1 seconds",
+            "max_duration": "1 seconds"
+          }
+        ]
+      }
+    ],
+    "priority": -1,
+    "half_life": "1 seconds",
+    "phase": "gas",
+    "display_items": true,
+    "display_field": false
+  },
+  {
+    "id": "emit_eventhorizon_limit",
+    "type": "emit",
+    "field": "fd_eventhorizon_limit",
+    "qty": 1,
+    "intensity": 1
+  },
+  {
+    "id": "mon_eventhorizon1",
+    "looks_like": "mon_vortex",
+    "type": "MONSTER",
+    "name": { "str": "event horizon" },
+    "description": "A black hole, pulsing with great magical essence.",
+    "default_faction": "unknown",
+    "species": [ "UNKNOWN" ],
+    "volume": "3 ml",
+    "weight": "3 g",
+    "hp": 10,
+    "speed": 10,
+    "material": [ "wind" ],
+    "emit_fields": [ "emit_eventhorizon_limit" ],
+    "symbol": "o",
+    "color": "black",
+    "phase": "GAS",
+    "aggression": 5,
+    "morale": 0,
+    "melee_skill": 0,
+    "melee_dice": 0,
+    "melee_dice_sides": 0,
+    "melee_cut": 0,
+    "attack_cost": 999,
+    "harvest": "exempt",
+    "armor_bash": 999,
+    "armor_cut": 999,
+    "armor_stab": 999,
+    "armor_bullet": 999,
+    "armor_acid": 999,
+    "armor_fire": 999,
+    "vision_day": 10,
+    "vision_night": 10,
+    "death_function": { "message": "", "corpse_type": "NO_CORPSE", "effect": { "id": "mon_eventhorizon1_target", "hit_self": true } },
+    "flags": [ "FLIES", "STUN_IMMUNE", "NOHEAD", "PACIFIST" ]
+  },
+  {
+    "id": "mon_eventhorizon1_ex",
+    "copy-from": "mon_eventhorizon1",
+    "type": "MONSTER",
+    "name": "event horizon",
+    "description": "A black hole, pulsing with great magical essence. It is exhausted.",
+    "color": "black_red",
+    "hp": 40,
+    "death_function": {
+      "message": "The event horizon explodes!",
+      "corpse_type": "NO_CORPSE",
+      "effect": { "id": "mon_eventhorizon1_ex_plode", "hit_self": true }
+    }
+  },
+  {
+    "id": "mon_petrifiedcorpse",
+    "type": "MONSTER",
+    "name": { "str": "petrified corpse" },
+    "description": "A once living being, now a statue doomed to fall.",
+    "default_faction": "unknown",
+    "species": [ "UNKNOWN" ],
+    "volume": "3 ml",
+    "weight": "3 g",
+    "hp": 1,
+    "speed": 1,
+    "material": [ "stone" ],
+    "emit_fields": [ "emit_eventhorizon_limit" ],
+    "symbol": "@",
+    "color": "white",
+    "aggression": 5,
+    "morale": 0,
+    "melee_skill": 0,
+    "melee_dice": 0,
+    "melee_dice_sides": 0,
+    "melee_cut": 0,
+    "harvest": "exempt",
+    "death_function": { "message": "", "corpse_type": "NORMAL" },
+    "flags": [ "STUN_IMMUNE", "PACIFIST" ]
+  }
+]

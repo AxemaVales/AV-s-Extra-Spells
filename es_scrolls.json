@@ -34,9 +34,49 @@
   {
     "type": "BOOK",
     "copy-from": "spell_scroll",
+    "id": "spell_scroll_es_soularrow_greatheavy",
+    "name": { "str": "Scroll of Great Heavy Soul Arrow", "str_pl": "Scrolls of Great Heavy Soul Arrow" },
+    "description": "Blasts a powerful soul arrow towards the target.",
+    "use_action": { "type": "learn_spell", "spells": [ "es_soularrow_greatheavy" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_es_soulspear",
+    "name": { "str": "Scroll of Soul Spear", "str_pl": "Scrolls of Soul Spear" },
+    "description": "Projects a soul spear that penetrates through targets.",
+    "use_action": { "type": "learn_spell", "spells": [ "es_soulspear" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_es_soulspear_crystal",
+    "name": { "str": "Scroll of Crystal Soul Spear", "str_pl": "Scrolls of Crystal Soul Spear" },
+    "description": "Blasts a crystallized soul spear that penetrates through targets.",
+    "use_action": { "type": "learn_spell", "spells": [ "es_soulspear_crystal" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_es_magicweapon",
+    "name": { "str": "Scroll of Magic Weapon", "str_pl": "Scrolls of Magic Weapon" },
+    "description": "Infuses your wielded weapon with mana, slightly increasing its base damage.",
+    "use_action": { "type": "learn_spell", "spells": [ "es_magicweapon" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_es_magicweapon_great",
+    "name": { "str": "Scroll of Great Magic Weapon", "str_pl": "Scrolls of Great Magic Weapon" },
+    "description": "Infuses your wielded weapon with mana, increasing its base damage.",
+    "use_action": { "type": "learn_spell", "spells": [ "es_magicweapon_great" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
     "id": "spell_scroll_es_magicweapon_crystal",
-    "name": { "str": "Scroll of Crystal Weapon", "str_pl": "Scrolls of Crystal Weapon" },
-    "description": "Infuses your weapon with crystallized mana, increasing its base damage and a chance to petrify weakened targets.",
+    "name": { "str": "Scroll of Crystal Magic Weapon", "str_pl": "Scrolls of Crystal Magic Weapon" },
+    "description": "Infuses your wielded weapon with crystallized mana, increasing its base damage and a chance to petrify weakened targets.",
     "use_action": { "type": "learn_spell", "spells": [ "es_magicweapon_crystal" ] }
   }
 ]

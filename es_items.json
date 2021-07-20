@@ -1,9 +1,35 @@
 [
   {
+    "id": "es_magicweapon_aura",
+    "type": "ARMOR",
+    "name": "magic weapon aura",
+    "description": "Your attack gains slightly increased damage.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price": 777,
+    "symbol": "o",
+    "color": "white",
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "relic_data": { "passive_effects": [ { "condition": "ALWAYS", "values": [ { "value": "BONUS_DAMAGE", "multiply": 1.125 } ] } ] }
+  },
+  {
+    "id": "es_magicweapon_great_aura",
+    "type": "ARMOR",
+    "name": "great magic weapon aura",
+    "description": "Your attack gains increased damage.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price": 777,
+    "symbol": "o",
+    "color": "white",
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "relic_data": { "passive_effects": [ { "condition": "ALWAYS", "values": [ { "value": "BONUS_DAMAGE", "multiply": 1.3 } ] } ] }
+  },
+  {
     "id": "es_magicweapon_crystal_aura",
     "type": "ARMOR",
-    "name": "crystal weapon aura",
-    "description": "Your attacks gain increased damage and given a chance to petrify the weak.",
+    "name": "crystal magic weapon aura",
+    "description": "Your attack gains greatly increased damage and given a chance to petrify the weak.",
     "weight": "1 g",
     "volume": "1 ml",
     "price": 777,
@@ -14,7 +40,7 @@
       "passive_effects": [
         {
           "condition": "ALWAYS",
-          "values": [ { "value": "BONUS_DAMAGE", "add": 8 } ],
+          "values": [ { "value": "BONUS_DAMAGE", "multiply": 1.45 } ],
           "hit_you_effect": [
             {
               "id": "es_magicweapon_crystal_pet",

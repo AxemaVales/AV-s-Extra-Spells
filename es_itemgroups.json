@@ -2,30 +2,25 @@
   {
     "id": "spell_scroll_tier_0",
     "type": "item_group",
-    "items": [
-      [ "spell_scroll_es_soularrow", 30 ]
-    ]
+    "items": [ [ "spell_scroll_es_soularrow", 30 ], [ "spell_scroll_es_magicweapon", 15 ], [ "spell_scroll_es_soulspear", 15 ] ]
   },
   {
     "id": "spell_scroll_tier_1",
     "type": "item_group",
     "items": [
       [ "spell_scroll_es_soularrow_great", 15 ],
-      [ "spell_scroll_es_soularrow_heavy", 15 ]
+      [ "spell_scroll_es_soularrow_heavy", 15 ],
+      [ "spell_scroll_es_magicweapon_great", 10 ]
     ]
   },
   {
     "id": "spell_scroll_tier_2",
     "type": "item_group",
-    "items": [
-      [ "spell_scroll_es_magicweapon_crystal", 20 ]
-    ]
+    "items": [ [ "spell_scroll_es_magicweapon_crystal", 20 ], [ "spell_scroll_es_soulspear_crystal", 15 ] ]
   },
   {
     "id": "spell_scroll_tier_3",
     "type": "item_group",
-    "items": [
-      [ "spell_scroll_es_eventhorizon1", 5 ]
-    ]
+    "items": [ [ "spell_scroll_es_eventhorizon1", 5 ] ]
   }
 ]

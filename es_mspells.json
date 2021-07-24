@@ -121,5 +121,53 @@
     "min_damage": 80,
     "max_damage": 80,
     "shape": "blast"
+  },
+  {
+    "id": "es_soulmass_atk",
+    "type": "SPELL",
+    "name": "Homing Soulmass Projectiles",
+    "description": "Homing Soulmass' main damage.",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "SILENT", "RANDOM_DAMAGE" ],
+    "min_damage": 4,
+    "max_damage": 12,
+    "min_range": 10,
+    "max_range": 10,
+    "damage_type": "pure",
+    "shape": "blast",
+    "effect": "attack"
+  },
+  {
+    "id": "es_soulmass_dmg",
+    "type": "SPELL",
+    "name": "Homing Soulmass Damage",
+    "description": "Soulmass dies.",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT" ],
+    "shape": "blast",
+    "effect": "attack",
+    "min_damage": 6,
+    "max_damage": 6,
+    "damage_type": "pure"
+  },
+  {
+    "id": "es_soulmass_atk_target",
+    "type": "SPELL",
+    "name": "Homing Soulmass main spell",
+    "description": "Homing Soulmass' initial spell.",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "SILENT", "RANDOM_DAMAGE" ],
+    "extra_effects": [
+      { "id": "es_soulmass_atk" },
+      { "id": "es_soulmass_atk" },
+      { "id": "es_soulmass_atk" },
+      { "id": "es_soulmass_atk" },
+      { "id": "es_soulmass_atk" },
+      { "id": "es_soulmass_dmg", "hit_self": true }
+    ],
+    "min_range": 10,
+    "max_range": 10,
+    "shape": "blast",
+    "effect": "attack"
   }
 ]

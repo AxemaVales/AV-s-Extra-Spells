@@ -108,5 +108,49 @@
     "harvest": "exempt",
     "death_function": { "message": "", "corpse_type": "NORMAL" },
     "flags": [ "STUN_IMMUNE", "PACIFIST" ]
+  },
+  {
+    "id": "mon_soulmass",
+    "looks_like": "mon_shadow",
+    "type": "MONSTER",
+    "name": { "str": "soulmass" },
+    "description": "A cluster of soul orbs hovering still on the spot.",
+    "default_faction": "unknown",
+    "species": [ "UNKNOWN" ],
+    "volume": "3 ml",
+    "weight": "3 g",
+    "hp": 5,
+    "speed": 10,
+    "material": [ "wind" ],
+    "symbol": "*",
+    "color": "white",
+    "phase": "GAS",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 0,
+    "melee_dice": 0,
+    "melee_dice_sides": 0,
+    "melee_cut": 0,
+    "attack_cost": 999,
+    "harvest": "exempt",
+    "armor_bash": 999,
+    "armor_cut": 999,
+    "armor_stab": 999,
+    "armor_bullet": 999,
+    "armor_acid": 999,
+    "armor_fire": 999,
+    "dodge": 999,
+    "vision_day": 10,
+    "vision_night": 10,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": { "id": "es_soulmass_atk_target" },
+        "cooldown": 0,
+        "monster_message": "<color_light_green>%1$s shimmers!</color>"
+      }
+    ],
+    "death_function": { "message": "The soulmass fades away.", "corpse_type": "NO_CORPSE" },
+    "flags": [ "SEES", "FLIES", "STUN_IMMUNE", "NOHEAD", "PACIFIST", "IMMOBILE" ]
   }
 ]

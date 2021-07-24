@@ -78,5 +78,13 @@
     "name": { "str": "Scroll of Crystal Magic Weapon", "str_pl": "Scrolls of Crystal Magic Weapon" },
     "description": "Infuses your wielded weapon with crystallized mana, increasing its base damage and a chance to petrify weakened targets.",
     "use_action": { "type": "learn_spell", "spells": [ "es_magicweapon_crystal" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_es_soulmass",
+    "name": { "str": "Scroll of Homing Soulmass", "str_pl": "Scrolls of Homing Soulmass" },
+    "description": "Summons 5 soul orbs that hovers over the selected tile and homes onto the nearest target, each dealing 4-12 pure damage.",
+    "use_action": { "type": "learn_spell", "spells": [ "es_soulmass" ] }
   }
 ]
